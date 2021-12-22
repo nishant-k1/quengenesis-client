@@ -1,0 +1,174 @@
+@mixin container {
+    max-width:1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+ul{
+    list-style-type: none;
+    li{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.footer-secondary{
+    background-color: #45596F;
+    padding: 4rem 0;
+    .container{
+        @include container; 
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+        align-items: start;
+        color: white;
+        @media screen and (max-width:768px) {
+            justify-content: start;
+            grid-template-columns: max-content;
+            row-gap: 2.5rem;
+        }
+        .logo-box{
+            display: grid;
+            align-content: start;
+            justify-content: start;
+            .logo{
+                height: 6rem;
+                max-width: 18rem;
+            }
+        }
+        .social-box{
+            display: grid;
+            grid-template-columns: max-content;
+            row-gap: 1rem;
+            justify-content: center;
+            align-items: start;
+            @media screen and (max-width:768px) {
+                justify-content: start;
+            }
+            h2{
+                font-size: larger;
+            }
+            ul{
+                display: grid;
+                grid-template-rows: repeat(3, min-content);
+                row-gap: .5rem;
+                align-items: top;
+                justify-content: left;
+                @media screen and (max-width:768px) {
+                    justify-content: start;
+                }
+                li{
+                    display: grid;
+                    grid-template-columns: max-content;
+                    align-items: top;
+                    justify-content: left;
+                    transition: .3s;
+                    a{
+                        color: white;
+                        &:hover{
+                            color: #EF648A;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+        .text-box-1{
+            display: grid;
+            grid-template-columns: auto;
+            row-gap: 1rem;
+            justify-content: center;
+            align-items: start;
+            @media screen and (max-width:768px) {
+                justify-content: start;
+            }
+            h2{
+                font-size: larger;
+            }
+            ul{
+                display: grid;
+                grid-template-rows: repeat(4, min-content);
+                row-gap: .5rem;
+                align-items: top;
+                justify-content: left;
+                @media screen and (max-width:768px) {
+                    justify-content: start;
+                }
+                li{
+                    display: grid;
+                    grid-template-columns: auto;
+                    align-items: top;
+                    justify-content: left;
+                    transition: .3s;
+                    a{
+                        color: white;
+                        &:hover{
+                            color: #EF648A;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .text-box-2{
+            h2{
+                font-size: larger;
+            }
+            display: grid;
+            grid-template-rows: repeat(3, min-content);
+            row-gap: 1rem;
+            align-items: start;
+            justify-content: start;
+            @media screen and (max-width:768px) {
+                justify-content: start;
+            }
+            a{
+                color: white;
+                &:hover{
+                    color: #EF648A;
+                    transition: .3s;
+                }
+            }
+
+            .phone-box{
+                display: grid;
+                grid-template-rows:  repeat(2, min-content);
+                row-gap: 1rem;
+                align-items: start;
+                justify-content: start;
+                @media screen and (max-width:768px) {
+                    justify-content: start;
+                }
+                a{
+                    color: white;
+                    &:hover{
+                        color: #EF648A;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.footer-primary{
+    padding: .5rem 0;
+    background-color: rgb(230, 227, 227);
+    .container{
+        @include container;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        color: rgb(69, 69, 69);
+        p{
+            padding: 1.5rem 0;
+            font-size: small;
+        }
+    }
+}

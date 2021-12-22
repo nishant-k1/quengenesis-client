@@ -1,0 +1,139 @@
+.apiIntegration-section-1 {
+  background-color: rgba(9, 39, 78, 0.822);
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.apiIntegration-section-1 .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .apiIntegration-section-1 .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    row-gap: 4rem;
+  }
+}
+
+.apiIntegration-section-1 .container .section-1-text-showcase {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 2rem;
+}
+
+.apiIntegration-section-1 .container .section-1-text-showcase h1 {
+  color: white;
+}
+
+.apiIntegration-section-1 .container .section-1-text-showcase p {
+  color: white;
+  line-height: 1.5rem;
+}
+
+.apiIntegration-section-1 .container .section-1-img-showcase {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apiIntegration-section-2 {
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.apiIntegration-section-2 .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .apiIntegration-section-2 .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    row-gap: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.apiIntegration-section-2 .container .section-2-text-showcase {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 2rem;
+}
+
+.apiIntegration-section-2 .container .section-2-text-showcase h1 {
+  color: rgba(0, 0, 0, 0.603);
+}
+
+.apiIntegration-section-2 .container .section-2-text-showcase p {
+  color: rgba(0, 0, 0, 0.801);
+  color: rgba(0, 0, 0, 0.897);
+  line-height: 1.5rem;
+}
+
+.apiIntegration-section-2 .container .section-2-img-showcase {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=ApiIntegration.css.map */

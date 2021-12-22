@@ -1,0 +1,83 @@
+@mixin container {
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto; 
+}
+
+.marketing-section-1{
+    background-color: rgba(9, 39, 78, 0.822);
+    margin: 0 auto;
+    padding: 6rem 0;
+    .container{
+        @include container;
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8rem;
+        @media only screen and (max-width:768px){
+            grid-template-columns: auto;
+            row-gap: 4rem;
+        }
+        .section-1-text-showcase{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-rows: auto auto;
+            row-gap: 2rem;
+            h1{
+                color: white;
+            }
+            p{
+                color: white;
+                line-height: 1.5rem;
+            
+            }
+        }
+    
+        .section-1-img-showcase{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.marketing-section-2{
+    margin: 0 auto;
+    padding: 6rem 0;
+    .container{
+        @include container;
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: auto auto;
+        column-gap: 8rem;
+        @media only screen and (max-width:768px){
+            grid-template-columns: auto;
+            row-gap: 4rem;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .section-2-text-showcase{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-rows: auto auto;
+            row-gap: 2rem;
+            h1{
+                color: rgba(0, 0, 0, 0.603);
+            }
+            p{
+                color: rgba(0, 0, 0, 0.897);
+                line-height: 1.5rem;
+            }
+        }
+    
+        .section-2-img-showcase{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.marketing-section-1 {
+  background-color: rgba(9, 39, 78, 0.822);
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+.marketing-section-1 .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  column-gap: 8rem;
+}
+.marketing-section-1 .container .section-1-text-showcase {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto auto;
+  row-gap: 2rem;
+}
+.marketing-section-1 .container .section-1-text-showcase h1 {
+  color: white;
+}
+.marketing-section-1 .container .section-1-text-showcase p {
+  color: white;
+}
+.marketing-section-1 .container .section-1-img-showcase {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing-section-2 {
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+.marketing-section-2 .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  column-gap: 8rem;
+}
+.marketing-section-2 .container .section-2-text-showcase {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto auto;
+  row-gap: 2rem;
+}
+.marketing-section-2 .container .section-2-text-showcase h1 {
+  color: rgba(0, 0, 0, 0.801);
+}
+.marketing-section-2 .container .section-2-text-showcase p {
+  color: rgba(0, 0, 0, 0.801);
+}
+.marketing-section-2 .container .section-2-img-showcase {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,448 @@
+.navbar {
+  background-color: white;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .container {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+.navbar .container .bars-icon-btn {
+  color: black;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar .container .bars-icon-btn {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.navbar .container .bars-icon-btn .bars-icon {
+  color: black;
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar .container .brand-logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .container .brand-logo .brand-logo-img {
+  max-height: 4rem;
+  max-width: 12rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .container .brand-logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .container nav {
+    display: none;
+  }
+}
+
+.navbar .container nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar .container nav ul {
+    grid-gap: 1rem;
+  }
+}
+
+.navbar .container nav ul li {
+  position: relative;
+}
+
+.navbar .container nav ul li .dropdown-icon-active {
+  height: 24px;
+  width: 24px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.navbar .container nav ul li .dropdown-icon-inactive {
+  font-weight: 400;
+  height: 24px;
+  width: 24px;
+}
+
+.navbar .container nav ul li .menu-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar .container nav ul li .menu-items {
+    font-size: 1rem;
+  }
+}
+
+.navbar .container nav ul li .menu-items:active {
+  color: #EF6183;
+}
+
+.navbar .container nav ul li .menu-items:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #EF6183;
+}
+
+.navbar .container nav ul li .active-menu-item {
+  color: #EF6183;
+}
+
+.navbar .container nav ul li .dropdown-active {
+  visibility: visible;
+  -webkit-animation: growDown 300ms ease-in-out forwards;
+          animation: growDown 300ms ease-in-out forwards;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  background-color: #002B4C;
+  position: absolute;
+  top: 260%;
+  left: -100%;
+  width: 350%;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@-webkit-keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  80% {
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  80% {
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+.navbar .container nav ul li .dropdown-active ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.navbar .container nav ul li .dropdown-active ul li a {
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navbar .container nav ul li .dropdown-active ul li a:hover {
+  color: #EF648A;
+}
+
+.navbar .container nav ul li .dropdown-inactive {
+  display: none;
+}
+
+.side-menu-active {
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  background-color: #45596F;
+  width: 65%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  z-index: 200;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: min-content min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content min-content;
+  grid-gap: 2.5rem;
+  -ms-flex-line-pack: top;
+      align-content: top;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border-right: 1px solid #EF6183;
+}
+
+@media screen and (min-width: 768px) {
+  .side-menu-active {
+    display: none;
+  }
+}
+
+.side-menu-active .back-arrow-box {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.side-menu-active .back-arrow-box .back-arrow {
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.side-menu-active .brand-logo-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-menu-active .brand-logo-box .brand-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-menu-active .brand-logo-box .brand-logo .brand-logo-sidebar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.side-menu-active nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding-left: 2rem;
+  display: grid;
+  row-gap: 1rem;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.side-menu-active nav ul .menu-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  row-gap: 1rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu-active nav ul .menu-items .dropdown-icon-active {
+  height: 24px;
+  width: 24px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.side-menu-active nav ul .menu-items .dropdown-icon-inactive {
+  font-weight: 400;
+  height: 24px;
+  width: 24px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.side-menu-active nav ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 1rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu-active nav ul li .dropdown-active ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  row-gap: 1rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu-active nav ul li .dropdown-active ul li {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu-active nav ul li .dropdown-active ul li a {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.side-menu-active nav ul li .dropdown-active ul li a:hover {
+  color: #EF648A;
+}
+
+.side-menu-active nav ul li .dropdown-inactive {
+  display: none;
+}
+
+.side-menu {
+  background-color: #002B4C;
+  width: 65%;
+  top: 0;
+  left: -65%;
+  border-right: none;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  position: fixed;
+  height: 100%;
+  z-index: 200;
+}
+
+@media screen and (min-width: 768px) {
+  .side-menu {
+    display: none;
+  }
+}
+
+.side-menu .back-arrow {
+  display: none;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.side-menu .brand-logo {
+  display: none;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.side-menu ul {
+  display: none;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,106 @@
+@mixin container {
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.section1{
+    background: linear-gradient(rgba(10, 16, 33, 0.804), rgba(10, 16, 33, 0.804)), url(../../../assets/girl.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 8rem 0;
+    .container{ 
+        @include container;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: white;
+        }
+    }
+}
+
+.section2{
+    padding: 6rem 0;
+    .container{
+        @include container;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        @media only screen and (max-width:768px){
+            display: flex;
+            flex-direction: column-reverse;
+            row-gap: 4rem;
+        }
+        .text-box{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-rows: auto auto;
+            row-gap: 2rem;
+            h1{
+                color: rgba(0, 0, 0, 0.603);
+            }
+            p{
+                color: rgba(0, 0, 0, 0.897);
+                line-height: 1.5rem;
+            }
+        }
+
+        .img-box{
+            display: grid;
+            align-items: center;
+            justify-content: right;
+            .sec-2-img{
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+    }
+}
+
+.section3{
+    padding: 6rem 0;
+    .container{
+        @include container;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        @media only screen and (max-width:768px){
+            grid-template-columns: 1fr;
+            row-gap: 4rem;
+        }
+        .text-box{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-rows: auto auto;
+            row-gap: 2rem;
+            h1{
+                color: rgba(0, 0, 0, 0.603);
+            }
+            p{
+                color: rgba(0, 0, 0, 0.897);
+                line-height: 1.5rem;
+            }
+        }
+        
+        .img-box{
+            display: grid;
+            align-items: center;
+            justify-content: left;
+            .sec-3-img{
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+    }
+}

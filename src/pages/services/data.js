@@ -1,5 +1,5 @@
-import img from '../../../assets/girl.svg';
-import img1 from '../../../assets/about1.svg';
+import img from '../../assets/girl.svg';
+import img1 from '../../assets/about1.svg';
 
 const section1Data={
         p1: 'kklfsjdfljdsf dsfjl   sjfldsfj  sfjldsfj dsf slfjkldsf fdsfjl dskjlf',

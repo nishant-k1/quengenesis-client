@@ -1,6 +1,6 @@
-import img from '../../../assets/girl.svg';
-import img1 from '../../../assets/about1.svg';
-import img2 from '../../../assets/about2.svg';
+import img from '../../assets/girl.svg';
+import img1 from '../../assets/about1.svg';
+import img2 from '../../assets/about2.svg';
 
 const section1Data={
         img:img,

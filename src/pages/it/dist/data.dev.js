@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.section2 = exports["default"] = void 0;
 
-var _marketingImg = _interopRequireDefault(require("../../../assets/marketingImg1.svg"));
+var _marketingImg = _interopRequireDefault(require("../../assets/marketingImg1.svg"));
 
-var _marketingImg2 = _interopRequireDefault(require("../../../assets/marketingImg2.svg"));
+var _marketingImg2 = _interopRequireDefault(require("../../assets/marketingImg2.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

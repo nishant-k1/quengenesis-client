@@ -1,6 +1,6 @@
 .section-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 89, 113, 0.5)), to(rgba(69, 89, 113, 0.5))), url(../../../assets/section1.svg);
-  background-image: linear-gradient(rgba(69, 89, 113, 0.5), rgba(69, 89, 113, 0.5)), url(../../../assets/section1.svg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 89, 113, 0.5)), to(rgba(69, 89, 113, 0.5))), url(../../assets/section1.svg);
+  background-image: linear-gradient(rgba(69, 89, 113, 0.5), rgba(69, 89, 113, 0.5)), url(../../assets/section1.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;

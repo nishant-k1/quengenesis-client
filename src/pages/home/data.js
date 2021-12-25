@@ -1,17 +1,17 @@
-import section1Img from '../../../assets/section1Img.svg';
-import section2Img from '../../../assets/section2Img.svg';
-import section2Img1 from '../../../assets/section2Img1.svg';
-import section2Img2 from '../../../assets/section2Img2.svg';
-import section2Img3 from '../../../assets/section2Img3.svg';
-import section2Img4 from '../../../assets/section2Img4.svg';
-import section3Img from '../../../assets/section3Img.svg';
-import section4Img1 from '../../../assets/section4Img1.svg';
-import section4Img2 from '../../../assets/section4Img2.svg';
-import section4Img3 from '../../../assets/section4Img3.svg';
-import section6Img1 from '../../../assets/section6Img1.svg';
-import section6Img2 from '../../../assets/section6Img2.svg';
-import section6Img3 from '../../../assets/section6Img3.svg';
-import section6Img4 from '../../../assets/section6Img4.svg';
+import section1Img from '../../assets/section1Img.svg';
+import section2Img from '../../assets/section2Img.svg';
+import section2Img1 from '../../assets/section2Img1.svg';
+import section2Img2 from '../../assets/section2Img2.svg';
+import section2Img3 from '../../assets/section2Img3.svg';
+import section2Img4 from '../../assets/section2Img4.svg';
+import section3Img from '../../assets/section3Img.svg';
+import section4Img1 from '../../assets/section4Img1.svg';
+import section4Img2 from '../../assets/section4Img2.svg';
+import section4Img3 from '../../assets/section4Img3.svg';
+import section6Img1 from '../../assets/section6Img1.svg';
+import section6Img2 from '../../assets/section6Img2.svg';
+import section6Img3 from '../../assets/section6Img3.svg';
+import section6Img4 from '../../assets/section6Img4.svg';
 
 
 const section1Data={

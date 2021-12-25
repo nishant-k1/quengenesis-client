@@ -1,5 +1,5 @@
-import section1Img from '../../../assets/api1.svg';
-import section2Img from '../../../assets/api2.svg';
+import section1Img from '../../assets/api1.svg';
+import section2Img from '../../assets/api2.svg';
 
 const section1={
     img1:section1Img,

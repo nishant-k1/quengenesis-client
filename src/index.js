@@ -12,13 +12,13 @@ ReactDOM.render(
         fallback={
           <div 
             style={{
-              height:"100%",
-              width:"100%",
+              height:"100vh",
+              width:"100vw",
               display:"grid", 
               justifyContent:'center', 
               alignItems:'center', 
               color:"#EF648A"}}>
-              Loading... 
+              <h2>Loading... </h2>
           </div>}>
         <App />
       </Suspense>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Marketing.css';
+import './marketing.css';
 import section1, {section2} from './data';
 
 const Section1=(props)=>{

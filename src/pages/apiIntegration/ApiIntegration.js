@@ -1,5 +1,5 @@
 import React from 'react';
-import './ApiIntegration.css';
+import './apiIntegration.css';
 import section1, {section2} from './data';
 
 const Section1=(props)=>{

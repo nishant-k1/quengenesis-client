@@ -1,20 +1,18 @@
-import React, { useEffect, Suspense} from 'react';
-import './App.css';
-import Header from '../shared/Header/Header';
+import React, { useEffect} from 'react';
+import Header from './shared/Header/Header';
 import { Switch, Route } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 import { lazy } from 'react';
-import Footer from '../shared/Footer/Footer';
+import Footer from './shared/Footer/Footer';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-const Home = lazy(() => import('../pages/home/Home'));
-const About = lazy(() => import('../pages/about/About'));
-const Marketing = lazy(() => import('../pages/marketing/Marketing'));
-const It = lazy(() => import('../pages/it/It'));
-const ApiIntegration = lazy(() => import('../pages/apiIntegration/ApiIntegration'));
-const Contact = lazy(() => import('../pages/contact/Contact'));
-const Payment = lazy(() => import('../pages/payment/Payment'));
-
+const Home = lazy(() => import('./pages/home/Home'));
+const About = lazy(() => import('./pages/about/About'));
+const Marketing = lazy(() => import('./pages/marketing/Marketing'));
+const It = lazy(() => import('./pages/it/It'));
+const ApiIntegration = lazy(() => import('./pages/apiIntegration/ApiIntegration'));
+const Contact = lazy(() => import('./pages/contact/Contact'));
+const Payment = lazy(() => import('./pages/payment/Payment'));
 
 const advancedMatching = { em: 'info@quengenesis.io' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
 const options = {
@@ -34,16 +32,6 @@ function App() {
   return (
     <>
       <Header />
-      <Suspense 
-        fallback={
-          <div 
-            style={{
-              display:"grid", 
-              justifyContent:'center', 
-              alignItems:'center', 
-              color:"#EF648A"}}>
-              Loading... 
-          </div>}>
         <Switch>
           <Route 
             exact path='/' 
@@ -67,7 +55,6 @@ function App() {
             path='/payment' 
             component={Payment} />
         </Switch>
-      </Suspense>
       <Footer />
       <MessengerCustomerChat pageId="107997134827152" />
     </>

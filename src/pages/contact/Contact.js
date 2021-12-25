@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "./contact.css";
 import React, {useState} from 'react';
 import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';

@@ -1,17 +1,12 @@
 import React from 'react';
 import section1Data, {section2Data, section3Data} from './data';
-import './Services.css';
+import './about.css';
 
 const Section1=(props)=>{
     return(
-        <div className='services-section-1'>
+        <div className='section1'>
             <div className="container">
-                <div className="img-box" >
-                    <img className='sec-3-img' src={props.img1} alt="img" />
-                </div>
-                <div className="tex-box">
-                    <p>{props.p1}</p>
-                </div>            
+                <h1>About Us</h1>
             </div>
         </div>
     );
@@ -21,7 +16,8 @@ const Section2=(props)=>{
     return(
         <div className="section2" >
             <div className="container" >
-                    <div className="tex-box">
+                    <div className="text-box">
+                        <h1>{props.h1}</h1>
                         <p>{props.p1}</p>
                     </div>
                 <div className="img-box" >
@@ -36,18 +32,20 @@ const Section3=(props)=>{
     return(
         <div className="section3" >
             <div className="container" >
-                <div className="img-box" >
+            <div className="img-box" >
                     <img className='sec-3-img' src={props.img1} alt="img" />
                 </div>
-                <div className="tex-box">
+                <div className="text-box">
+                    <h1>{props.h1}</h1>
                     <p>{props.p1}</p>
                 </div>
+
             </div>
         </div>
     )
 }
 
-const Services = () => {
+const About = () => {
 
     return(
         <>
@@ -58,4 +56,4 @@ const Services = () => {
     );
 }
 
-export default Services;
+export default About;

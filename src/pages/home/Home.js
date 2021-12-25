@@ -1,8 +1,8 @@
-import "./Home.css";
+import "./home.css";
 import React from 'react';
 import section1Data,{section2aData, section2Data, section3Data, section4Data, section6Data} from './data';
 import { Link } from "react-router-dom";
-import SvgComponent from './SvgComponent.jsx';
+import SvgComponent from './SvgComponent.js';
 
 const Section1=(props)=>{
     return(

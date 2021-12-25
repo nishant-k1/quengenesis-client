@@ -1,4 +1,4 @@
-import './Footer.css';
+import './footer.css';
 import React from 'react';
 import { Link } from "react-router-dom";
 import ReactGA from 'react-ga';
